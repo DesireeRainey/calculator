@@ -32,13 +32,14 @@ class Calculator extends Component {
   			<h1>Add with React!</h1>
   		<form onSubmit={this.add}>
   		<div className="add">
-    		<input value={this.state.val1} onChange={this.handleChange1} type="text" />
+    		<input  value={this.state.val1} onChange={this.handleChange1} type="text" />
     		<span>+</span>
     		<input value={this.state.val2} onChange={this.handleChange2} type="text" />
     		<span>=</span>
-    		<button onSubmit={this.state.add}></button>
     		<h3>The total is: {this.state.total}</h3>
-  		</div>
+  		  <button onSubmit={this.state.add}></button>
+
+      </div>
   		</form>
 		</div>
 		);
